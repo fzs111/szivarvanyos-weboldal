@@ -1,0 +1,77 @@
+<html>
+<head>
+<style>
+    .lool {
+        animation: 1s kurzor linear infinite,
+                   5s szivarvany linear infinite;
+    }
+    @keyframes szivarvany{
+        0%{
+            background-color: hsl(calc(36 * 0), 100%, 50%);
+        }
+        10%{
+            background-color: hsl(calc(36 * 1), 100%, 50%);
+        }
+        20%{
+            background-color: hsl(calc(36 * 2), 100%, 50%);
+        }
+        30%{
+            background-color: hsl(calc(36 * 3), 100%, 50%);
+        }
+        40%{
+            background-color: hsl(calc(36 * 4), 100%, 50%);
+        }
+        50%{
+            background-color: hsl(calc(36 * 5), 100%, 50%);
+        }
+        60%{
+            background-color: hsl(calc(36 * 6), 100%, 50%);
+        }
+        70%{
+            background-color: hsl(calc(36 * 7), 100%, 50%);
+        }
+        80%{
+            background-color: hsl(calc(36 * 8), 100%, 50%);
+        }
+        90%{
+            background-color: hsl(calc(36 * 9), 100%, 50%);
+        }
+        100%{
+            background-color: hsl(calc(36 * 10), 100%, 50%);
+        }
+    }
+    @keyframes kurzor{
+        0%{
+            cursor: ns-resize;
+        }
+        25%{
+            cursor: nesw-resize;
+        }
+        50%{
+            cursor: ew-resize;
+        }
+        75%{
+            cursor: nwse-resize;
+        }
+        100%{
+            cursor: ns-resize;
+        }
+    }
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.body.addEventListener('contextmenu', e => {
+    e.preventDefault()
+    alert('NEJOBBKLIKKELJÉL!!!')
+  })
+})
+</script>
+</head>
+<body class="lool">
+<h1>Helló :)</h1>
+Én vagyok a weboldal!
+<img src="kutya.jpg" />
+Photo by <a href="https://unsplash.com/@vanya_chescheviy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ivan Cheshchevyi</a> on <a href="https://unsplash.com/s/photos/white-dog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+</body>
+</html>
